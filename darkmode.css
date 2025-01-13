@@ -1,0 +1,81 @@
+/* Force dark mode on everything */
+html, body {
+  background-color: rgb(28, 28, 30) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Target every possible container */
+div, main, article, aside, section, nav, header, footer,
+.container, .content, .wrapper, .main, .article, .story,
+[class*="container"], [class*="content"], [class*="wrapper"],
+[class*="main"], [class*="article"], [class*="story"],
+[class*="background"], [class*="bg-"] {
+  background-color: rgb(28, 28, 30) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Force dark background on elements with inline styles */
+[style*="background"],
+[style*="background-color"] {
+  background-color: rgb(28, 28, 30) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Links */
+a {
+  color: rgb(64, 159, 255) !important;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/* Form elements */
+input,
+textarea,
+select {
+  background-color: rgb(36, 36, 38) !important;
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(64, 64, 64) !important;
+}
+
+/* Buttons */
+button {
+  background-color: rgb(44, 44, 46) !important;
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(64, 64, 64) !important;
+}
+
+/* Images - subtle adjustment */
+img {
+  opacity: 0.95;
+}
+
+/* Ensure all text elements have proper contrast */
+p, h1, h2, h3, h4, h5, h6, span, li {
+  color: rgb(255, 255, 255) !important;
+  background-color: transparent !important;
+}
+
+/* Override any light themes or styles */
+[class*="light"],
+[class*="white"],
+[style*="background: white"],
+[style*="background: #fff"],
+[style*="background-color: white"],
+[style*="background-color: #fff"],
+[style*="background-color: rgb(255"],
+[style*="background: rgb(255"] {
+  background-color: rgb(28, 28, 30) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+/* Force dark mode on iframes and embedded content */
+iframe, embed, object {
+  background-color: rgb(28, 28, 30) !important;
+}
+
+/* Override any !important light backgrounds */
+* {
+  background-color: rgb(28, 28, 30) !important;
+}
